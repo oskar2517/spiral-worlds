@@ -14,7 +14,7 @@ Minecraft generates random terrain by sampling and combining multiple noise func
 
 This mod changes how some of these noise functions are sampled. Before looking up a position, it rotates that position around the world origin (0, 0) by an angle that grows with the distance from it. Points close to the center get twisted more tightly and points far away more gently. This results in the spiral pattern shown below.
 
-The actual logic of this mod is extremely simple and entirely contained within [SpiralWorld.java](https://github.com/oskar2517/spiral-worlds/blob/main/src/main/java/me/oskar/spiralworld/SpiralNoise.java), which wraps another noise and overrides the methods for sampling it in 2D and 3D space.
+The actual logic of this mod is extremely simple and entirely contained within [SpiralNoise.java](https://github.com/oskar2517/spiral-worlds/blob/main/src/main/java/me/oskar/spiralworld/SpiralNoise.java), which wraps another noise and overrides the methods for sampling it in 2D and 3D space.
 
 ## Screenshots
 
