@@ -3,15 +3,15 @@
 	"id": "spiral-world",
 	"version": "${version}",
 	"name": "Spiral World",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Makes Minecraft generate spiral worlds!",
 	"authors": [
-		"Me!"
+		"Oskar"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/spiral-world/icon.png",
 	"environment": "*",
 	"entrypoints": {
