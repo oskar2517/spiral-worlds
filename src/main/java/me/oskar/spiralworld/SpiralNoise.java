@@ -3,15 +3,19 @@ package me.oskar.spiralworld;
 import net.minecraft.util.Interval;
 import net.minecraft.world.level.levelgen.synth.Noise;
 
-public final class SpiralNoise implements Noise {
+public class SpiralNoise implements Noise {
 
-    public static final double TWIST = 3.0;
+    private static final double TWIST = 3.0;
     private final Noise baseNoise;
 
-    public SpiralNoise(Noise baseNoise) { this.baseNoise = baseNoise; }
+    public SpiralNoise(Noise baseNoise) {
+        this.baseNoise = baseNoise;
+    }
 
     @Override
-    public Interval range() { return baseNoise.range(); }
+    public Interval range() {
+        return baseNoise.range();
+    }
 
     @Override
     public float get(double x, double z) {
