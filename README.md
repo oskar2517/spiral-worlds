@@ -2,6 +2,10 @@
 
 Fabric Mod that makes Minecraft generate spiral worlds.
 
+## Download
+
+The compiled mod can be downloaded from the [releases tab](https://github.com/oskar2517/spiral-worlds/releases). Currently, only Minecraft 26.3 is supported. 
+
 ## Screenshots
 
 ![screenshot](/gh_assets/2026-11-20_01.56.24.png)
