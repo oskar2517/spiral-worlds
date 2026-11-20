@@ -9,6 +9,18 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	mavenCentral()
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = "Modrinth"
+				url = "https://api.modrinth.com/maven"
+			}
+		}
+		filter {
+			includeGroup "maven.modrinth"
+		}
+	}
 }
 
 loom {
@@ -26,6 +38,9 @@ dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "org.apache.commons:commons-imaging:1.0.0-alpha6"
+
+	clientRuntimeOnly "maven.modrinth:distanthorizons:${project.distant_horizons_version}"
 }
 
 processResources {
